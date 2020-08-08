@@ -65,11 +65,28 @@ code {
   text-transform: uppercase;
   background: #d8165b;
   border-radius: 100px;
+  position: relative;
 }
 
 .tooltip {
-  position: relative;
-  width: 97px;
-  height: 34px;
-  background-color: yellow;
+  position: absolute;
+  /* width: 97px; */
+  /* height: 34px; */
+
+  background: #2ad37e;
+  border-radius: 33px;
+}
+
+#left {
+  left: -30px;
+  /* transform: rotate(90deg); */
+}
+#right {
+  right: -30px;
+}
+#bottom {
+  bottom: -30px;
+}
+#top {
+  top: -30px;
 }

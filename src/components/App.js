@@ -29,6 +29,18 @@ export default class App extends Component {
       });
     }
   };
+
+  handleMouseEnter = (e) => {
+    const tooltip = document.getElementById(this.state.tooltipPosition);
+    console.log(tooltip);
+    tooltip.classList = 'tooltip';
+  };
+  handleMouseOut = (e) => {
+    console.log(e);
+    const tooltip = document.getElementById(this.state.tooltipPosition);
+    console.log(tooltip);
+    tooltip.classList = 'hide';
+  };
   render() {
     console.log(this.state);
     return (
@@ -37,7 +49,10 @@ export default class App extends Component {
           handleDropDownBtnClick={this.handleDropDownBtnClick}
           handleDropDownSelection={this.handleDropDownSelection}
         />
-        <Button />
+        <Button
+          handleMouseEnter={this.handleMouseEnter}
+          handleMouseOut={this.handleMouseOut}
+        />
       </div>
     );
   }

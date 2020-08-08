@@ -2,24 +2,29 @@ import React, { Component } from 'react';
 
 export default class Button extends Component {
   render() {
+    const { handleMouseEnter, handleMouseOut } = this.props;
     return (
       <div className="Button-Component">
         <div className="btn-container">
-          <div className="btn">
+          <div
+            className="btn"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseOut}
+          >
             <div>Button</div>
-            <div className="tooltip" id="top">
+            <div className="tooltip hide" id="top">
               {' '}
               TOP
             </div>
-            <div className="tooltip" id="right">
+            <div className="tooltip hide" id="right">
               {' '}
               right
             </div>
-            <div className="tooltip" id="bottom">
+            <div className="tooltip hide" id="bottom">
               {' '}
               bottom
             </div>
-            <div className="tooltip" id="left">
+            <div className="tooltip hide" id="left">
               {' '}
               left
             </div>
