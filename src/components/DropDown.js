@@ -5,10 +5,13 @@ export default class DropDown extends Component {
     const { handleDropDownBtnClick, handleDropDownSelection } = this.props;
     return (
       <div className="Dropdown-Component">
+        <h1 id="logo" style={{ color: 'white' }}>
+          h <span style={{ color: '#d8165b' }}> OVER</span> here
+        </h1>
         <div className="dropdown-container">
           <div className="dropdown">
             <button id="dropdownbtn" onClick={handleDropDownBtnClick}>
-              TootlTip
+              Choose Tooltip Position
             </button>
             <div id="menu" className=" hide" onClick={handleDropDownSelection}>
               <div className="drop-item selected " tooltipvalue="top">

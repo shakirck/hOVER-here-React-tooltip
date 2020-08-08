@@ -11,7 +11,7 @@ export default class Button extends Component {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseOut}
           >
-            <div>Button</div>
+            <div>hOVER</div>
             <div className="tooltip hide" id="top">
               {' '}
               TOP

@@ -28,8 +28,11 @@ export default class App extends Component {
         tooltipPosition,
       });
     }
+    this.handleHideDropdown();
   };
-
+  handleHideDropdown = () => {
+    document.getElementById('menu').classList.toggle('hide');
+  };
   handleMouseEnter = (e) => {
     const tooltip = document.getElementById(this.state.tooltipPosition);
     console.log(tooltip);
