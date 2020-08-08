@@ -11,3 +11,65 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Dropdown  */
+
+.Dropdown-Component {
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown #menu {
+  position: absolute;
+}
+.drop-item {
+  background-color: burlywood;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.drop-item:hover {
+  background-color: coral;
+}
+.selected {
+  background-color: cornflowerblue;
+}
+.hide {
+  display: none;
+}
+
+/* button */
+
+.Button-Component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.btn {
+  /* position: absolute; */
+  width: 162px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #d8165b;
+  border-radius: 100px;
+}
+
+.tooltip {
+  position: relative;
+  width: 97px;
+  height: 34px;
+  background-color: yellow;
+}
