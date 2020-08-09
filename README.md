@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## Description 
+
+This is a simple tooltip component. We can select the location in which we want to show the tooltip around an element from a dropdown.
+After selecting a position, when we hover over an element we will get a tooltip from the position we choose.
+
 ## Available Scripts
 
 In the project directory, you can run:
