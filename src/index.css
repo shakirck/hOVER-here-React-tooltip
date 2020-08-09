@@ -51,7 +51,6 @@ code {
 }
 #dropdownbtn:hover {
   cursor: pointer;
-  /* transform: scale(1.2); */
 }
 #dropdownbtn::after {
   content: '';
@@ -96,7 +95,8 @@ code {
 .Button-Component {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  margin-top: 250px;
   height: 100vh;
 }
 .btn {

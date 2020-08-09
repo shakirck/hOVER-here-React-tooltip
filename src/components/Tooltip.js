@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Button extends Component {
+export default class Tooltip extends Component {
   render() {
     const { handleMouseEnter, handleMouseOut } = this.props;
     return (
@@ -13,19 +13,15 @@ export default class Button extends Component {
           >
             <div>hOVER</div>
             <div className="tooltip hide" id="top">
-              {' '}
               TOP
             </div>
             <div className="tooltip hide" id="right">
-              {' '}
               right
             </div>
             <div className="tooltip hide" id="bottom">
-              {' '}
               bottom
             </div>
             <div className="tooltip hide" id="left">
-              {' '}
               left
             </div>
           </div>
