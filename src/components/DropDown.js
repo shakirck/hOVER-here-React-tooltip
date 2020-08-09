@@ -5,9 +5,11 @@ export default class DropDown extends Component {
     const { handleDropDownBtnClick, handleDropDownSelection } = this.props;
     return (
       <div className="Dropdown-Component">
-        <h1 id="logo" style={{ color: 'white' }}>
-          h <span style={{ color: '#d8165b' }}> OVER</span> here
-        </h1>
+        <div className="navbar">
+          <h3 id="logo" style={{ color: 'white', padding: 10 }}>
+            h<span style={{ color: '#d8165b' }}>OVER</span>
+          </h3>
+        </div>
         <div className="dropdown-container">
           <div className="dropdown">
             <button id="dropdownbtn" onClick={handleDropDownBtnClick}>
